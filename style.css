@@ -1,0 +1,53 @@
+body {
+	font-family: "Lora", serif;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+header {
+	border-bottom: 1px solid black;
+	background-color: black;
+	overflow: auto;
+	padding: 0 auto;
+	margin: 0 auto;
+	color: white;
+	width: 100%;
+}
+
+header h1 {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-weight: normal;
+}
+
+header h4 {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.content {
+	margin: 10px;
+}
+
+.content h1 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 45px;
+}
+
+.title {
+	float: left;
+	margin: 20px;
+}
+
+.usercorner {
+	float: right;
+	margin: 10px;
+	font-weight: bold;
+}
+
+.user {
+	padding: 30px;
+	font-size: 20px;
+	display: inline-block;
+}

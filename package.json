@@ -1,0 +1,28 @@
+{
+  "name": "PerfectHarmony",
+  "version": "1.0.0",
+  "description": "Final project for WDI Feb '15",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoshkabob/PerfectHarmony"
+  },
+  "keywords": [
+    "music",
+    "notation",
+    "harmony"
+  ],
+  "author": "Shoshanah Weisinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoshkabob/PerfectHarmony/issues"
+  },
+  "homepage": "https://github.com/shoshkabob/PerfectHarmony",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "vexflow": "^1.2.27"
+  }
+}
