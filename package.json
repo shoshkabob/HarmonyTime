@@ -23,6 +23,7 @@
   "homepage": "https://github.com/shoshkabob/PerfectHarmony",
   "dependencies": {
     "bower": "^1.3.12",
+    "requirejs": "^2.1.16",
     "vexflow": "^1.2.27"
   }
 }
