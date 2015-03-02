@@ -18,27 +18,23 @@ def pageLoad(page)
 end
 
 get '/' do
-	redirect '/PerfectHarmony'
-end
-
-get '/PerfectHarmony' do
 	content = pageLoad("index.html")
 	erb :index, locals: {content: content}
 end
 
-get '/PerfectHarmony/:id' do
+get '/:id' do
 	page = "#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
 end
 
-get '/PerfectHarmony/eartraining/:id' do
+get '/eartraining/:id' do
 	page = "#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
 end 
 
-get '/PerfectHarmony/eartraining/noterecog/:id' do
+get '/eartraining/noterecog/:id' do
 	page = "#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
