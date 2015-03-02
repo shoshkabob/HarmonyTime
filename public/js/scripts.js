@@ -15,8 +15,6 @@ $(document).ready(function(){
 	var detuneElem;
 	var detuneAmount;
 
-	
-
 	function playSound(freq, event) {
 		myAudioContext = new webkitAudioContext();
 

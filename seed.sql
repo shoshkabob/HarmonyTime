@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS notes;
+DROP TABLE IF EXISTS pieces;
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE IF NOT EXISTS notes (
 	ID INTEGER PRIMARY KEY, 
 	note TEXT, 
@@ -6,7 +10,7 @@ CREATE TABLE IF NOT EXISTS notes (
 	wavelengthin FLOAT
 	);
 
-CREATE TRIGGER addin AFTER INSERT ON notes BEGIN
+CREATE TRIGGER IF NOT EXISTS addin AFTER INSERT ON notes BEGIN
 	UPDATE notes SET wavelengthin = (wavelengthcm / 2.54) WHERE id = new.id;
 	UPDATE notes SET wavelengthin = round(wavelengthin, 2);
 END;
@@ -121,3 +125,22 @@ VALUES
 ("A8", 7040.00, 4.90),
 ("A#8", 7458.62, 4.63),
 ("B8", 7902.13, 4.37);
+
+CREATE TABLE IF NOT EXISTS pieces (
+	ID INTEGER PRIMARY KEY, 
+	code TEXT,
+	name TEXT,
+	username TEXT references users 
+	);
+
+CREATE TABLE IF NOT EXISTS users (
+	ID INTEGER PRIMARY KEY,
+	username TEXT,
+	name TEXT,
+	email TEXT,
+	password TEXT,
+	noterecog_completed INTEGER,
+	interval_completed INTEGER,
+	melody_completed INTEGER,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
