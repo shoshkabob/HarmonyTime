@@ -17,6 +17,10 @@ def pageLoad(page)
 	return content
 end
 
+get '/' do
+	redirect '/PerfectHarmony'
+end
+
 get '/PerfectHarmony' do
 	content = pageLoad("index.html")
 	erb :index, locals: {content: content}
