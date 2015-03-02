@@ -9,3 +9,4 @@ gem ‘activerecord’
 gem ‘sinatra-reloader’
 gem ‘bcrypt’
 gem ‘require_relative’
+gem ‘unicorn’
