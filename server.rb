@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'unicorn'
 require 'sinatra/reloader'
 require 'HTTParty'
 require 'json'
