@@ -18,24 +18,24 @@ def pageLoad(page)
 end
 
 get '/' do
-	content = pageLoad("index.html")
+	content = pageLoad("./public/files/index.html")
 	erb :index, locals: {content: content}
 end
 
 get '/:id' do
-	page = "#{params[:id]}.html"
+	page = "./public/files/#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
 end
 
 get '/eartraining/:id' do
-	page = "#{params[:id]}.html"
+	page = "./public/files/#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
 end 
 
 get '/eartraining/noterecog/:id' do
-	page = "#{params[:id]}.html"
+	page = "./public/files/#{params[:id]}.html"
 	content = pageLoad(page)
 	erb :index, locals: {content: content}
 end
