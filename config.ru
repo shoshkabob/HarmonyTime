@@ -1,3 +1,3 @@
-require './PerfectHarmony'
+require './server'
 
 run Sinatra::Application
