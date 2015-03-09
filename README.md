@@ -1,3 +1,3 @@
-# Perfect Harmony
+# Harmony Time
 
-An automatic harmony suggestion tool by Shoshanah Weisinger.
+A website for music resources by Shoshanah Weisinger.
